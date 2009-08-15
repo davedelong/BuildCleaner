@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0AE638AF0F56F3A300D0CEF9 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE638AE0F56F3A300D0CEF9 /* AppController.m */; };
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
-		550B70E81034C85B009D637B /* BWToolkitFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 550B70E71034C85B009D637B /* BWToolkitFramework.framework */; };
 		550B733010351B85009D637B /* NSString+FSRef.m in Sources */ = {isa = PBXBuildFile; fileRef = 550B732F10351B85009D637B /* NSString+FSRef.m */; };
 		550B734F10351CE7009D637B /* NSFileManager+FileSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 550B734E10351CE7009D637B /* NSFileManager+FileSize.m */; };
 		550B742B10352AF4009D637B /* ProjectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 550B742A10352AF4009D637B /* ProjectCell.m */; };
@@ -23,18 +22,6 @@
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		55E6CA9C0F5713B5007E354C /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0AE638AD0F56F3A300D0CEF9 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
@@ -45,7 +32,6 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* BuildCleaner_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuildCleaner_Prefix.pch; sourceTree = "<group>"; };
-		550B70E71034C85B009D637B /* BWToolkitFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BWToolkitFramework.framework; path = /Users/dave/Library/Frameworks/BWToolkitFramework.framework; sourceTree = "<absolute>"; };
 		550B732E10351B85009D637B /* NSString+FSRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FSRef.h"; sourceTree = "<group>"; };
 		550B732F10351B85009D637B /* NSString+FSRef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FSRef.m"; sourceTree = "<group>"; };
 		550B734D10351CE7009D637B /* NSFileManager+FileSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+FileSize.h"; sourceTree = "<group>"; };
@@ -70,7 +56,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				55E6CA640F571360007E354C /* Cocoa.framework in Frameworks */,
-				550B70E81034C85B009D637B /* BWToolkitFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,7 +107,6 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				550B70E71034C85B009D637B /* BWToolkitFramework.framework */,
 			);
 			name = BuildCleaner;
 			sourceTree = "<group>";
@@ -176,7 +160,6 @@
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
-				55E6CA9C0F5713B5007E354C /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -265,6 +248,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../Library/Frameworks\"",
+					"\"$(SRCROOT)/../../../../Library/Frameworks\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -286,6 +270,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../Library/Frameworks\"",
+					"\"$(SRCROOT)/../../../../Library/Frameworks\"",
 				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
