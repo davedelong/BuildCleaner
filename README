@@ -1,0 +1,5 @@
+BuildCleaner is a little menubar application that scans your hard drive every few minutes for build folders and deletes them if they haven't been modified recently (you can change the cutoff interval in the settings window). ÊYou can also tell it to ignore the build folders of specific projects.
+
+BuildCleaner was created by Dave DeLong (http://davedelong.com)
+
+THIS CODE IS PROVIDED AS IS, WITH NO WARRANTY (EXPRESS OR IMPLIED).  USE AT YOUR OWN RISK.
