@@ -1,9 +1,9 @@
 //
-//  TSBadgeCell.m
-//  Tahsis
+//  ProjectCell.m
+//  BuildCleaner
 //
-//  Created by Matteo Bertozzi on 11/29/08.
-//  Copyright 2008 Matteo Bertozzi. All rights reserved.
+//  Created by Dave DeLong on 8/13/09.
+//  Copyright 2009 Dave DeLong. All rights reserved.
 //
 
 #import "ProjectCell.h"
